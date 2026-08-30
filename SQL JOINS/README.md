@@ -1,13 +1,13 @@
-# 📌 Overview
+# Overview
 This contains a series of SQL queries designed to demonstrate a deep understanding of relational database operations, specifically focusing on Joins. The ability to merge disparate tables is a fundamental skill for any data professional, and this project serves as a technical showcase of those capabilities using a product database schema.
 
-## 🗄️ Database Context
+## Database Context
 The queries are executed within the enoch database, focusing on two primary tables:
 
 * tbl_product: Containing core product identifiers and names.
 * tbl_product_color: Containing color mappings and product associations.
 
-# 🛠️ Technical Implementation
+# Technical Implementation
 1. **Inner Join**
 Used to retrieve only the records that have matching values in both tables.
 
@@ -44,7 +44,7 @@ SELECT p.p_id, p.p_name, c.color_id
 FROM tbl_product p 
 CROSS JOIN tbl_product_color c ON p.p_id = c.p_id;
 ```
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 **Relational Logic:** Understanding how keys (p_id) link data across a schema.
 
 **Data Integrity:** Using Joins to identify missing records or NULL values.
@@ -53,5 +53,5 @@ CROSS JOIN tbl_product_color c ON p.p_id = c.p_id;
 
 **Query Optimization:** Using aliases (p, c) for cleaner, more readable code.
 
-## **🚀 Why This Matters**
+## **Why This Matters**
 For a business, understanding Joins is the difference between seeing a "full picture" and missing critical data. Whether it's identifying which products have no stock or which customers haven't made a purchase, these SQL foundations are the building blocks of accurate business intelligence.
